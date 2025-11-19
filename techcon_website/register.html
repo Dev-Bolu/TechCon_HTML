@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for TechCon 2024</title>
+    
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div>
+            <!-- Page Title -->
+            <h1>
+                Register for TechCon 2024
+            </h1>
+            
+            <!-- Navigation Menu -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section >
+            <h2>Secure Your Spot</h2>
+            <p>Fill out the form below to register for the most anticipated tech event of the year.</p>
+
+            <!-- Registration Form -->
+            <form action="/submit-registration" method="POST" class="space-y-6">
+                
+                <!-- Field for Name -->
+               
+                    <label for="full_name">Full Name</label>
+                    <input 
+                        type="text" 
+                        id="full_name" 
+                        name="full_name" 
+                        required 
+                        aria-required="true" 
+                        placeholder="John Doe"
+                        >
+
+                <!-- Field for Email -->
+             
+                    <label for="email">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        required 
+                        aria-required="true" 
+                        placeholder="you@example.com"
+                        >
+                <!-- Field for Password -->
+              
+                    <label for="password">Password</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        required 
+                        aria-required="true" 
+                        minlength="8"
+                        placeholder="Minimum 8 characters"
+                       >
+
+                <!-- Field for Password Confirmation -->
+               
+                    <label for="confirm_password">Confirm Password</label>
+                    <input 
+                        type="password" 
+                        id="confirm_password" 
+                        name="confirm_password" 
+                        required 
+                        aria-required="true" 
+                        minlength="8"
+                        placeholder="Re-enter password"
+                      >
+
+                <!-- Checkbox for Terms and Conditions -->
+               
+                        <input 
+                            id="terms" 
+                            name="terms" 
+                            type="checkbox" 
+                            required 
+                            aria-required="true"
+                           >
+                   
+                        <label for="terms" >I agree to the <a href="#">Terms and Conditions</a></label>
+                  
+
+                <!-- Submit Button -->
+               
+                    <button type="submit" >
+                        Register Now
+                    </button>
+       
+            </form>
+            
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+
+            <!-- Copyright Information -->
+            <p>
+                &copy; 2024 TechCon Conference. All rights reserved. <span class="font-bold">copyright</span>.
+            </p>
+       
+    </footer>
+
+</body>
+</html>
